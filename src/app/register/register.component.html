@@ -1,0 +1,100 @@
+
+    
+    <div class="header">
+    
+      <div class="overlay"></div>
+    
+      <nav class="navbar navbar-expand-lg navbar-light">
+    
+    <div class="container">
+    
+    
+        <a class="navbar-brand wow pulse" href="#">
+          ر<span>أ</span>يك
+        </a>
+        <button class="navbar-toggler" style="border:0;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i style="color:#FFF" class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="" [routerLink]="['/']">الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" [routerLink]="['/register']">انشاء حساب</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">عن الموقع</a>
+              </li>
+          
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="#">اتصل بنا</a>
+                  </li>
+    
+          </ul>
+     
+        </div>
+    </div>
+    
+      </nav>
+    
+
+
+<div class="header-content text-center">
+  <div class="container">
+
+<div class="logcard" id="signview">
+<h3>انشاء حساب جديد</h3>
+
+<input type="text" id="username" placeholder="اسم المستخدم" #signname  onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 48 && event.charCode <= 57)" >
+<input type="email" placeholder="البريد الالكتروني" #signmail>
+<input type="password" placeholder="كلمة المرور" #signpass>
+<button id="regbtn" (click)="register(signname.value,signmail.value,signpass.value)" >انشاء حساب</button>
+<p class="text-center" id="loginp">
+  هل لديك حساب؟ 
+  <span (click)="loginfun()" >تسجيل دخول</span>
+</p>
+
+<div class="alert alert-danger alert-dismissible fade show" role="alert" id="err">
+ 
+  <p> حدث خطأ حاول مجددا </p>
+
+</div>
+
+<div class="alert alert-success alert-dismissible fade show" role="alert" id="suc">
+  <p>error</p>
+   
+</div>
+
+</div>
+
+
+<div class="logcard" id="loginview">
+<h3>تسجيل دخول</h3>
+<input type="email" placeholder="البريد الالكتروني" #logemail>
+<input type="password" placeholder="كلمة المرور" #logpass>
+<button (click)="loginac(logemail.value,logpass.value)" id="logbtn">تسجيل الدخول</button>
+
+<p class="text-center" id="loginp">
+  ليس لديك حساب؟ 
+  <span (click)="signfun()" >انشاء حساب</span>
+</p>
+
+<div class="alert alert-danger alert-dismissible fade show" role="alert" id="errlog">
+ 
+    
+  <p> حدث خطأ حاول مجددا </p>
+
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>

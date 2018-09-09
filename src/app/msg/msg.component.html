@@ -1,0 +1,77 @@
+
+
+<div class="header">
+
+  <div class="overlay"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+<div class="container">
+
+
+    <a class="navbar-brand wow pulse" href="#">
+      ر<span>أ</span>يك
+    </a>
+    <button class="navbar-toggler" style="border:0;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i style="color:#FFF" class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/']">الرئيسية <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  [routerLink]="['/register']">انشاء حساب</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">عن الموقع</a>
+          </li>
+    
+
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">اتصل بنا</a>
+              </li>
+
+      </ul>
+ 
+    </div>
+</div>
+
+  </nav>
+
+  <div class="container">
+
+
+  <div class="header-content text-center">
+
+      <div class="cssload-thecube">
+          <div class="cssload-cube cssload-c1"></div>
+          <div class="cssload-cube cssload-c2"></div>
+          <div class="cssload-cube cssload-c4"></div>
+          <div class="cssload-cube cssload-c3"></div>
+        </div>
+
+        <div class="card" id="notfound">
+          <h2>لا يوجد حساب مرتبط</h2>
+        </div>
+   
+  <div class="card text-center" *ngIf="found">
+    <div class="pic">
+      <img [src]="image" width="100" height="100">
+    </div>
+    <p class="name">
+     <img src="../../assets/img/ver.png" *ngIf="ver" width="10" height="10"> {{name}}
+
+    </p>
+    <p class="des">{{des}}</p>
+    <textarea placeholder="اكتب رأيك هنا" #text></textarea>
+    <button (click)="send(text.value)" ><span id="send">ارسال</span> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  </div>
+</div>
+
+
+</div>

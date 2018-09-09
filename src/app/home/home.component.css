@@ -1,0 +1,465 @@
+h2,h1{
+    font-family: 'Cairo', sans-serif;
+
+}
+
+/*start header */
+
+.header {
+    background-image: url('../../assets/img/home-pattern.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header nav{
+    z-index: 3;
+    
+}
+
+.header .navbar-light .navbar-brand {
+    font-family: 'Cairo', sans-serif;
+    color: #FFF;
+    font-size: 35px;
+}
+
+.header .navbar-light .navbar-brand span {
+    color: orange;
+    font-weight: bold;
+}
+
+.header .container {
+    direction: rtl;
+}
+
+.navbar-nav {
+	padding: 12px;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 108, 255, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFF;
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+    margin-right: 6px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+    text-align: right;
+    margin: 0;
+   
+}
+
+a {
+    text-decoration: none;
+    color: #FFF !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #fff;
+    color: #FFF !important;
+}
+
+
+.navbar-light[_ngcontent-c1] .navbar-nav[_ngcontent-c1] .nav-link[_ngcontent-c1] {
+    text-align: right;
+}
+
+.header .headback {
+position: absolute;
+bottom: 0;
+width: 100%;
+left: 0;
+height: 80px;
+z-index: 3;
+padding: 100px 0;
+background-image: url('../../assets/img/drop.png');
+background-repeat: repeat-x;
+background-attachment: scroll;
+background-position: bottom center;
+background-size: contain;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    width: 100%;
+    position: relative;
+}
+
+.header-content .content h1{
+font-family: 'Cairo', sans-serif;
+color: #FFF;
+margin-bottom: 25px;
+}
+
+.header-content .content {
+    color: #FFF;
+    width: 100%;
+
+}
+
+.header-content .content p {
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    opacity: 0.9;
+    margin-bottom: 25px;
+
+}
+
+.header-content .content span {
+    color: orange;
+}
+
+.header-content .content input {
+padding: 17px;
+font-family: 'Cairo', sans-serif;
+direction: rtl;
+border:1px solid #ccc;
+border-radius: 0 5px 5px 0;
+width: 50%;
+
+}
+
+.header-content .content .mupload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+margin-bottom: 25px;
+    
+}
+
+.header-content .content .sing {
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    font-family: 'Cairo', sans-serif;
+    color: #FFF;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header-content .content .sing:hover {
+    background: #fff;
+    color: #000;
+}
+
+.header-content .content .mupload button {
+    padding: 18px;
+    border: 0px;
+    background: orange;
+    border-radius: 15px 0 0 15px;
+    color: #FFF;
+}
+
+.header .mupload .filinput {
+    position: relative;
+}
+
+.header .mupload .filinput input {
+    position: absolute;
+    top: 16px;
+    left: -18px;
+    width: 111px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    color: transparent;
+    opacity: 0;
+    background: transparent;
+}
+
+/* start comets */
+
+.comets {
+padding:60px 0;
+position: relative;
+}
+
+.comets .container {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #CCC;
+}
+
+.comets .first {
+    margin-bottom: 30px;
+}
+
+.comets h1 {
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 60px;
+}
+
+.comets span {
+    color: orange;
+}
+
+.comets img {
+    margin-bottom: 10px;
+}
+
+.comets h2 {
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 10px;
+}
+
+.comets p {
+    font-family: 'Cairo', sans-serif;
+font-size: 15px;
+}
+
+
+/* start status */
+
+
+.status {
+padding:0 0 60px 0;
+position: relative;
+}
+
+.status h1 {
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 60px;
+}
+
+.status img {
+    margin-bottom: 15px;
+}
+
+.status h2 {
+    margin-bottom: 15px;
+
+    font-family: 'Cairo', sans-serif;
+}
+
+.status p {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(0, 108, 255, 0.7);
+}
+
+
+
+
+      /* what say about us */
+
+      .client {
+        position: relative;
+        padding: 70px 0px;
+        position: relative;
+        background-image: url('../../assets/img/pattren.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        }
+        
+        
+          
+       
+       
+        .client:after, .client .overlay:after {
+            display: block;
+            content: "";
+            border-width: 0 100px 100px 0;
+            border-style: solid;
+            border-color: orange transparent;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+   
+        .client:before,.client .overlay:before {
+            display: block;
+            content: "";
+            border-width: 0 100px 100px 0;
+            border-style: solid;
+            border-color: orange #FFF;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+   
+        
+.client .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background:rgba(0, 108, 255, 0.9);
+}
+        
+
+.client .rec:before {
+    content: "";
+    display: block;
+    width: 0;
+    border-width:25px 25px 0  ;
+    border-style: solid;
+    border-color: rgba(0, 108, 255, 1) transparent;
+    position: absolute;
+    bottom: -25px;
+    left: 48%;
+}
+
+.client h2 {
+    color: #FFF;
+    font-size: 22px;
+}
+
+.client h1 {
+    margin-bottom: 30px;
+    color: #FFF;
+}
+
+.client input, textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    direction: rtl;
+    width: 100%;
+    margin-bottom: 6px;
+    font-family: 'Cairo', sans-serif;
+   width: 50%;
+   display: inline-block;
+}
+
+textarea {
+    height: 150px;
+}
+
+.client button {
+    text-align: right;
+    background: transparent;
+    color: #FFF;
+    padding: 15px 25px;
+    font-family: 'Cairo', sans-serif;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/*  fotter */
+
+.fotter {
+    margin: 30px;
+    padding: 15px;
+}
+
+.fotter h1 {
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 30px;  
+}
+
+.fotter span{
+color: orange;
+margin: 0;
+font-family: 'Cairo', sans-serif;
+direction: rtl;
+}
+
+.fotter ul {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.fotter i {
+    background: rgba(0, 108, 255, 0.7);
+    color: #FFF;
+    padding: 6px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.fotter i:hover {
+    background: rgba(0, 108, 255, 0.9);
+
+}
+
+.fotter .social li {
+    display: inline-block;
+}
+
+.fotter h2 {
+    font-family: 'Cairo', sans-serif;
+color: #aaa;
+font-size: 16px;
+}
+
+
+/* start responsive */
+
+
+@media(max-width: 576px){
+
+    .client:after, .client .overlay:after {
+        display: block;
+        content: "";
+        border-width: 0 50px 50px 0;
+        border-style: solid;
+        border-color: orange transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .client:before,.client .overlay:before {
+        display: block;
+        content: "";
+        border-width: 0 50px 50px 0;
+        border-style: solid;
+        border-color: orange #FFF;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }  
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    
+.client .rec:before {
+    content: "";
+    display: block;
+    width: 0;
+    border-width:25px 25px 0  ;
+    border-style: solid;
+    border-color: rgba(0, 108, 255, 1) transparent;
+    position: absolute;
+    bottom: -25px;
+    left: 44%;
+}
+
+.header-content .content input {
+    width: 80%;
+}
+
+.client input, .client textarea {
+    width: 100%;
+}
+
+}
